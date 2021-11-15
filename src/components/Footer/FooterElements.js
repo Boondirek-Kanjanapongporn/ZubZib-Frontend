@@ -2,11 +2,11 @@ import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
 
 export const FooterContainer = styled.footer`
-    background-color: #101522;
+    background-color: #282b30;
 `
 
 export const FooterWrap = styled.div`
-    padding: 48px 24px;
+    padding: 12px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@ export const FooterWrap = styled.div`
 
 export const SocialMedia = styled.section`
     max-width: 1000px;
-    width: 100%auto;
+    width: 100%;
 `
 
 export const SocialMediaWrap = styled.div`
@@ -30,7 +30,6 @@ export const SocialMediaWrap = styled.div`
 
 export const SocialLogo = styled(LinkR)`
     color: #ffffffd9;
-    padding-bottom: 2rem;
     justify-self: start;
     cursor: pointer;
     text-decoration: none;

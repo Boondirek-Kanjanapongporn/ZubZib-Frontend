@@ -3,8 +3,12 @@ export const AboutData =
         frontend: "Frontend: React",
         backend: "Backend: Spring Boot",
         language: "Languages: Java, JavaScript, HTML5, CSS",
-        detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna \
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis \
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat \
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        detail: "Zubzib is a chatting website created for our final Java project at King Mongkut's Institute of Technology Ladkrabang.\
+        Zubzib's objective is to connect everyone through the power of Online Internet. With Zubzib, We want to create a Community, Society, \
+        and Family for everyone. In this project, we divided Zubzib into 2 sections— Frontend and Backend. For Frontend, we used React Framework to build \
+        our website. The languages involve Javascript, HTML5, and CSS. For Backend, in the other hand, we used Spring Framework— which is \
+        built by Java language. The Spring Boot Framework is responsible for connecting Zubzib to a database, Login/Signup Interface, \
+        Login Authenticator, Web security, and Websocket. We hope that Zubzib can, one day, contribute to real-based implementation.\
+         Much Love, from Zubzib creators. :)",
+         ending: "-Much Love, from Zubzib creators. 😊"
     }

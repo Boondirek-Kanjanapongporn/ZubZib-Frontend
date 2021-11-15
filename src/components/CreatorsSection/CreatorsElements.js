@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 export const CreatorsContainer = styled.div`
     overflow: hidden;
+    height: 100vh;
+    width:100%;
     background:${({lightTheme})=>(lightTheme? '#f6f6f6':'#121212')};
 
     @media screen and (max-width: 768px){
@@ -11,7 +13,6 @@ export const CreatorsContainer = styled.div`
 
 export const CreatorsWrapper = styled.div`
     display: grid;
-    //background-color:green;
     z-index: 1;
     height: 100vh;
     width: 100%auto;

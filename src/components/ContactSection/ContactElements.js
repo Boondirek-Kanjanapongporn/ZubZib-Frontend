@@ -4,7 +4,7 @@ export const ContactContainer = styled.div`
     height: 100vh;
     width:100%;
     display:flex;
-    margin-top:-80px;
+    margin-top:-8vh;
     background:${({lightTheme})=>(lightTheme? '#f6f6f6':'#1e2124')};
     justify-content:center;
     align-items:center;
@@ -17,11 +17,11 @@ export const ContactContainer = styled.div`
 `
 
 export const ContactWrapper = styled.div`
-    margin-right: auto;
-    margin-left: auto;
+    height:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
+    padding: 15px 15px;
 `
 
 export const ContactH1 = styled.div`
@@ -29,7 +29,7 @@ export const ContactH1 = styled.div`
     color: #ebbf5d;
     font-weight: 550;
     padding-bottom: 10px;
-    margin-top: 7rem;
+    margin-top: 3rem;
 
     @media screen and (max-width:480px){
         font-size: 2rem;
@@ -44,6 +44,7 @@ export const FormContainer = styled.form`
     align-items: center;
     justify-content: space-between;
     width: 500px;
+    max-height: 80%;
 
     @media screen and (max-width:530px){
         width: 400px;
@@ -61,7 +62,6 @@ export const Container1 = styled.div`
     align-items:center;
     width:100%;
     height:100%;
-    margin-bottom: 1em;
     //border-bottom: 2px solid #ebbf5d;
 `
 
@@ -85,37 +85,52 @@ export const LabelWrapper = styled.div`
 
 export const Label = styled.label`
     color: ${({lightTheme})=>(lightTheme? '#121212': '#ffffffd9')};
-    padding-bottom: 0.2em;
+    padding-top: 0.2em;
     font-size: 18px;
     font-weight:600;
     letter-spacing: 1.2px;
+    z-index: 10;
 `
 
 export const Input = styled.input`
-    background: ${({lightTheme})=>(lightTheme? "#e6e6e6":"#a8a8a8")};
-    color: ${({lightTheme})=>(lightTheme? '#121212': '#ffffffd9')};
-    border-color: ${({lightTheme})=>(lightTheme? '#121212':'#ffffffd9')};
-    border-radius: 15px;
-    border: 1px solid;
+    background: ${({lightTheme})=>(lightTheme? "#f6f6f6":"#a8a8a8")};
+    color: ${({lightTheme})=>(lightTheme? '#36393e': '#ffffffd9')};
+    border-color: ${({lightTheme})=>(lightTheme? '#36393e':'#ffffffd9')};
+    border: none;
+    border-bottom:2px solid;
     width: 100%;
-    margin-bottom: 0.5em;
     height: 2.5em;
     padding-left: 0.5em;
     font-size: 16px;
+    margin-bottom: 2px;
+    margin-top:-5px;
+    &:focus{
+        outline: none;
+    }
 `
 
 export const TextArea = styled.textarea`
-    background: ${({lightTheme})=>(lightTheme? "#e6e6e6":"#a8a8a8")};
-    color: ${({lightTheme})=>(lightTheme? '#121212': '#ffffffd9')};
-    border-color: ${({lightTheme})=>(lightTheme? '#121212':'#ffffffd9')};
-    border-radius: 15px;
-    border: 1px solid;
+    background: ${({lightTheme})=>(lightTheme? "#f6f6f6":"#a8a8a8")};
+    color: ${({lightTheme})=>(lightTheme? '#36393e': '#ffffffd9')};
+    border-color: ${({lightTheme})=>(lightTheme? '#36393e':'#ffffffd9')};
+    border-radius: 10px;
+    border: 2px solid;
     width: 100%;
-    margin-bottom: 2.5em;
-    min-height: 150px;
+    min-height: 170px;
     padding-top: 0.5em;
     padding-left: 0.5em;
     font-size: 16px;
+    margin-top:3px;
+`
+export const Error = styled.span`
+    color: #cc0000;
+    font-size: 15px;
+    font-weight:600;
+    letter-spacing: 1.2px;
+    &::before {
+        display: inline;
+        content: "⚠ ";
+    }
 `
 
 export const SubmitButton = styled.input`
@@ -124,7 +139,7 @@ export const SubmitButton = styled.input`
     padding:12px 30px;
     font-size:16px;
     margin: 0 auto;
-    margin-bottom: 4em;
+    margin-top: 1.5em;
     border-radius: 50px;
     white-space: nowrap;
     outline: none;

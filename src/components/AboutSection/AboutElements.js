@@ -4,7 +4,7 @@ export const AboutContainer= styled.div`
     height: 100vh;
     width:100%;
     display:flex;
-    margin-top:-80px;
+    margin-top:-8vh;
     background:${({lightTheme})=>(lightTheme? '#f6f6f6':'#1e2124')};
     justify-content:center;
     align-items:center;
@@ -27,9 +27,10 @@ export const AboutWrapper = styled.div`
 `
 
 export const AboutTitleContainer = styled.div`
-    //background-color:green;
+    /* background-color:green; */
     padding-top:2rem;
     margin: auto;
+    padding-right:64px;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -79,7 +80,7 @@ export const AboutDetail = styled.div`
     padding: 1.5rem 1.5rem;
     justify-content: flex-start;
     min-height: 400px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     max-width: 1000px;
 `

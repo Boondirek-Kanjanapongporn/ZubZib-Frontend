@@ -5,3 +5,8 @@ export const FlexDiv = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
 `
+
+export const CreatorsContainer = styled.div`
+    background-color:green;
+    margin-top:-8vh;
+`

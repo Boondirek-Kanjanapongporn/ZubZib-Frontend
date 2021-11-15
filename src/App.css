@@ -4,3 +4,68 @@
   padding: 0;
   font-family: 'Quantico', sans-serif;
 }
+
+.ce-chat-title-text{
+  /* color: #f9bc50 !important; */
+  color: #36393e !important;
+}
+
+.ce-chat-subtitle-text{
+  color: #36393e !important;
+}
+
+.ce-primary-button {
+  background-color: #f9bc50 !important;
+}
+
+/* ::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+} */
+
+/* .ce-settings::-webkit-scrollbar {
+  display: none !important;
+} */
+
+.ce-danger-button{
+  background-color: rgb(255,255,255) !important;
+}
+
+.ce-chat-card{
+  color: #36393e !important;
+}
+
+.ce-my-message-bubble{
+  background-color: #f9bc50 !important;
+}
+
+.ce-message-bubble{
+  color: #36393e !important;
+}
+
+.ce-my-message-timestamp{
+  color: #f9bc50 !important;
+}
+
+.ce-social-message-form{
+  border-top:2px solid #e0e0e0;
+  min-height: 80px;
+}
+
+#ce-send-message-button{
+  background-color: #f9bc50 !important;
+  margin-bottom: 10px;
+}
+#ce-upload-document-icon{
+  color: #f9bc50 !important;
+  transform: scale(1.1);
+  margin-bottom: 10px;
+}
+.ce-textarea-input{
+  background-color: #f9f9f9 !important;
+  min-height: 30px;
+  border-radius: 10px;
+}
+.ce-send-button{
+  color: #f9bc50 !important;
+}

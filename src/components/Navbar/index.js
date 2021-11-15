@@ -10,7 +10,7 @@ const Navbar = ({toggle, lightTheme, togglelight}) => {
     const [scrollNav, setScrollNav] = useState(false)
 
     const changeNav = () =>{
-        if(window.scrollY >= 80){
+        if(window.scrollY >= 30){
             setScrollNav(true)
         }
         else{
@@ -21,7 +21,10 @@ const Navbar = ({toggle, lightTheme, togglelight}) => {
         window.addEventListener('scroll', changeNav)
     }, [])
 
-    const toggleHome = ()=>{
+    const toggleHome = (e)=>{
+        if (window.location.pathname === "/chatroom"){
+            e.preventDefault();
+        }
         scroll.scrollToTop();
     }
 
@@ -59,7 +62,7 @@ const Navbar = ({toggle, lightTheme, togglelight}) => {
                             {navlinkitems}
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink lightTheme={lightTheme} to={{pathname: "https://github.com/Boondirek-Kanjanapongporn"}} target="_blank">Sign Up</NavBtnLink>
+                            <NavBtnLink lightTheme={lightTheme} to="/signup">Sign Up</NavBtnLink>
                         </NavBtn>
                     </NavbarContainer>
                     {themeIconDisplay()}

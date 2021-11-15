@@ -1,10 +1,9 @@
 import styled from "styled-components"
 import {Link as LinkR} from "react-router-dom"
-import {Link as LinkS} from "react-scroll"
 
 export const Nav = styled.nav`
     background: ${({lightTheme, scrollNav})=>(lightTheme? (scrollNav? "#f6f6f6" : "#f0f0f0"): (scrollNav? "#121212" : "#282b3080"))};
-    height: 80px;
+    height: 8vh;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -21,10 +20,10 @@ export const Nav = styled.nav`
 export const NavbarDetail = styled.div`
     //background-color:green;
     margin:auto;
-    height: 80px;
+    height: 100%;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px;
+    max-width: 1300px;
     display:flex;
     align-items:center;
     flex-wrap:nowrap;
@@ -112,7 +111,7 @@ export const Navlogo = styled(LinkR)`
 export const MobileIcon = styled.div`
     display: none;
     @media screen and (max-width: 768px) {
-        margin-top: 3px;
+        margin-top:-1.5vh;
         display: block;
         position: absolute;
         top: 0;
