@@ -92,27 +92,23 @@ const Navbar2 = ({toggle, lightTheme, togglelight, toggleauthenticate}) => {
     const onSubmitDelete =(DeleteData)=>{
         var result = window.confirm("Are you sure you want to delete account?");
         if (result == true){
-            alert("Deleted User")
-            // let temp = {"username":username}
-            // let Obj = {...temp, ...DeleteData}
-            // fetch("http://localhost:3333/user/delete",{
-            //     method: "DELETE",
-            //     headers:{"Content-Type":"application/json",'Accept': 'application/json'},
-            //     body:JSON.stringify(Obj)
-            // }).then((res) => res.json()).then((result)=>{
-            //     if (result == true){
-            //         alert("Account Deleted")
-            //         let secret = JSON.stringify(DeleteData,["password"]).slice(13,-2)
-            //         axios.delete(
-            //             "https://api.chatengine.io/users/{{user_id}}/",
-            //             {'username':username},
-            //             {headers:{"Private-key":""}}
-            //         )
-            //     }
-            //     else{
-            //         alert("Incorrect password")
-            //     }
-            // })
+            let temp = {"username":username}
+            let Obj = {...temp, ...DeleteData}
+            fetch("https://9e84-2001-fb1-4e-97f4-25-8bd2-87ca-1651.ngrok.io/user/delete",{
+                method: "DELETE",
+                headers:{"Content-Type":"application/json",'Accept': 'application/json'},
+                body:JSON.stringify(Obj)
+            }).then((res) => res.json()).then((result)=>{
+                if (result == true){
+                    alert("Account Deleted")
+                    setUsername("");
+                    setPassword("");
+                    toggleauthenticate();
+                }
+                else{
+                    alert("Incorrect password")
+                }
+            })
         }
     }
 

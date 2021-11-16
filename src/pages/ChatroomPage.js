@@ -39,7 +39,7 @@ const Chatroom = () => {
               })
             // let temp = {"username":username}
             // let Obj = {...temp, ...DeleteData}
-            // fetch("http://localhost:3333/user/delete",{
+            // fetch("https://9e84-2001-fb1-4e-97f4-25-8bd2-87ca-1651.ngrok.io/user/delete",{
             //     method: "DELETE",
             //     headers:{"Content-Type":"application/json",'Accept': 'application/json'},
             //     body:JSON.stringify(Obj)
@@ -73,7 +73,7 @@ const Chatroom = () => {
                     projectID= {process.env.REACT_APP_CHAT_ENGINE_ID}
                     renderNewMessageForm={()=><MessageFormSocial/>}
                 />
-                <button onClick={onSubmitDelete}>Delete Account</button>
+                {/* <button onClick={onSubmitDelete}>Delete Account</button> */}
                 {/* <Footer/> */}
             </FlexDiv>
         </>

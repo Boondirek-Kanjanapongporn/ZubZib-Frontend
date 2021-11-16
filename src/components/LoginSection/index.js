@@ -17,7 +17,7 @@ const LoginSection = ({lightTheme, toggleauthenticate}) => {
     // }
 
     // useEffect(() => {
-    //     fetch("http://localhost:8080/user/getAll")
+    //     fetch("https://9e84-2001-fb1-4e-97f4-25-8bd2-87ca-1651.ngrok.io/user/getAll")
     //     .then(res=>res.json())
     //     .then((result)=>{
     //         setUsers(result);
@@ -25,7 +25,7 @@ const LoginSection = ({lightTheme, toggleauthenticate}) => {
     // }, [])
 
     const onSubmit =(loginData)=>{
-        fetch("http://localhost:3333/user/match",{
+        fetch("https://9e84-2001-fb1-4e-97f4-25-8bd2-87ca-1651.ngrok.io/user/match",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(loginData)
