@@ -13,7 +13,7 @@ const SignupSection=({lightTheme})=>{
 
     const onSubmit =(data)=>{
         
-        fetch("https://9e84-2001-fb1-4e-97f4-25-8bd2-87ca-1651.ngrok.io/user/add",{
+        fetch("https://a9b9-2001-fb1-4e-97f4-25-8bd2-87ca-1651.ngrok.io/user/add",{
             method: "POST",
             headers:{"Content-Type":"application/json",'Accept': 'application/json'},
             body:JSON.stringify(data)

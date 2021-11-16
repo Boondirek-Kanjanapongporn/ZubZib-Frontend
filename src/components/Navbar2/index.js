@@ -94,7 +94,7 @@ const Navbar2 = ({toggle, lightTheme, togglelight, toggleauthenticate}) => {
         if (result == true){
             let temp = {"username":username}
             let Obj = {...temp, ...DeleteData}
-            fetch("https://9e84-2001-fb1-4e-97f4-25-8bd2-87ca-1651.ngrok.io/user/delete",{
+            fetch("https://a9b9-2001-fb1-4e-97f4-25-8bd2-87ca-1651.ngrok.io/user/delete",{
                 method: "DELETE",
                 headers:{"Content-Type":"application/json",'Accept': 'application/json'},
                 body:JSON.stringify(Obj)
